@@ -15,4 +15,5 @@
 - Nếu which không tìm được chương trình, whereis là lựa chọn tốt vì phạm vi tìm kiếm của nó rộng hơn các mục hệ thống.  
 
 > $ whereis diff  
-diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz
+diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.  
+===
