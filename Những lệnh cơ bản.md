@@ -17,4 +17,4 @@
 > $ whereis diff  
 diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.  
 
-===
+---
