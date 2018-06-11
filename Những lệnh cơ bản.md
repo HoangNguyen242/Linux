@@ -1,4 +1,4 @@
-# Tra cứu ứng dụng
+# I. Tra cứu ứng dụng
 - Phụ thuộc vào các bản phân phối, chương trình và các phần mềm được cài đặt trong các thư mục khác nhau. Tóm lại, các chương trình thực thi phải nằm trong các thư mục sau:  
 
 > /bin  
@@ -18,3 +18,9 @@
 diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.  
 
 ---
+
+# II. Truy cập thư mục  
+
+|Tables|Are|  
+|-------------|-------------|  
+
