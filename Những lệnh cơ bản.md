@@ -21,6 +21,9 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
 
 # II. Truy cập thư mục  
 
-|Tables|Are|  
+|Lệnh|Chức năng|  
 |-------------|-------------|  
-
+|cd|Trở về thư mục chính|  
+|cd ..| Trở về thư mục gốc|  
+|cd -|Trở về thư mục trước|  
+|cd /|Từ thư mục hiện tại vào thư mục gốc (/)|  
