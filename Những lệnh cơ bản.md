@@ -37,7 +37,7 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
   
 # IV. Liên kết cứng và liên kết tượng trưng
   
-- Lệnh 'ln' có thể được sử dụng để tạo liên kết cứng hoặc liên kết mềm, gọi là liên kết tượng trưng (Symbolic links) hay symlinks.  
+- Lệnh `ln` có thể được sử dụng để tạo liên kết cứng hoặc liên kết mềm, gọi là liên kết tượng trưng (Symbolic links) hay symlinks.  
 
 > Giả sử file1.txt đã tồn tại, một liên kết cứng, gọi là file2.txt được tạo bằng lệnh:  
-''' # ln file1.txt file2.txt '''
+``` # ln file1.txt file2.txt ```
