@@ -16,9 +16,7 @@
 
 > $ whereis diff  
 diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.  
-
----
-
+  
 # II. Truy cập thư mục  
 
 |Lệnh|Chức năng|  
@@ -27,3 +25,19 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
 |cd ..| Trở về thư mục gốc|  
 |cd -|Trở về thư mục trước|  
 |cd /|Từ thư mục hiện tại vào thư mục gốc (/)|  
+  
+# III. Khám phá thư mục
+  
+|Lệnh|Chức năng|  
+|-------|-----------|  
+|ls 	  |Liệt kê nội dung thư mục|  
+|ls –a  |Liệt kê tất cả các tệp bao gồm các tệp và thư mục ẩn|  
+|tree   |Hiển thị cây của thư mục|  
+|tree -d|Liệt kê các thư mục và loại bỏ tên tệp|  
+  
+# IV. Liên kết cứng và liên kết tượng trưng
+  
+- Lệnh 'ln' có thể được sử dụng để tạo liên kết cứng hoặc liên kết mềm, gọi là liên kết tượng trưng (Symbolic links) hay symlinks.  
+
+> Giả sử file1.txt đã tồn tại, một liên kết cứng, gọi là file2.txt được tạo bằng lệnh:  
+''' # ln file1.txt file2.txt '''
