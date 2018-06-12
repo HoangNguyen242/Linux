@@ -1,6 +1,6 @@
 # Những lệnh cơ bản
 
-#1 I. Tra cứu ứng dụng
+## I. Tra cứu ứng dụng
 - Phụ thuộc vào các bản phân phối, chương trình và các phần mềm được cài đặt trong các thư mục khác nhau. Tóm lại, các chương trình thực thi phải nằm trong các thư mục sau:  
 
 > /bin  
@@ -19,7 +19,7 @@
 > $ whereis diff  
 diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.  
   
-#1 II. Truy cập thư mục  
+## II. Truy cập thư mục  
 
 |Lệnh|Chức năng|  
 |-------------|-------------|  
@@ -28,7 +28,7 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
 |cd -|Trở về thư mục trước|  
 |cd /|Từ thư mục hiện tại vào thư mục gốc (/)|  
   
-#1 III. Khám phá thư mục
+## III. Khám phá thư mục
   
 |Lệnh|Chức năng|  
 |-------|-----------|  
@@ -37,7 +37,7 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
 |tree   |Hiển thị cây của thư mục|  
 |tree -d|Liệt kê các thư mục và loại bỏ tên tệp|  
   
-#1 IV. Liên kết cứng và liên kết tượng trưng
+## IV. Liên kết cứng và liên kết tượng trưng
   
 - Lệnh `ln` có thể được sử dụng để tạo liên kết cứng hoặc liên kết mềm, gọi là liên kết tượng trưng (Symbolic links) hay symlinks.  
 
