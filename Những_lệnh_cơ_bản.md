@@ -54,3 +54,5 @@ diff: /usr/bin/diff /usr/share/man/man1/diff.1.gz.
 - -i trong dòng đầu tiên dùng để in ra i-nút, có số lượng khác nhau duy nhất với mỗi tệp, và trường này giống nhau với cả 2 tệp.* **Điều thực sự xảy ra ở đây là một tập tin nhưng có hai tên liên kết** *.
 
 - Liên kết mềm có thể trỏ đến các đối tượng ngay cả trên các tập tin khác nhau (hoặc các phân vùng) có thể có hoặc không tồn tại. Trong trường hợp liên kết không trỏ đến một đối tượng đang tồn tại, bạn sẽ có được một liên kết treo lơ lửng.
+
+> Nguồn: [Basic Commands](https://github.com/lacoski/linux-notes/blob/master/content/basic_commands.md)
