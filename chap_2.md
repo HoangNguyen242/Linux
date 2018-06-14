@@ -30,4 +30,4 @@
 - Lệnh `diff` dùng để so sánh các file và thư mục.
 
 ## V.File tiện ích
--   
+- Tính chất thật của file được xác định bởi tiện ích `file`. Nó kiểm tra nội dung và các đặc điểm nhất định để xác định xem các tệp là văn bản thuần túy, thư viện được chia sẻ, chương trình thực thi, tập lệnh hay thứ gì khác.
