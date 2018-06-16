@@ -8,7 +8,7 @@
 |chmod|Được sử dụng để thay đổi quyền trên tệp|  
 
 - Tệp có ba loại quyền: đọc (r), viết (w), thực thi (x). Chúng thường được biểu diễn theo thứ tự sau rwx.  
-- Các quyền này ảnh hưởng đến ba nhóm chủ sở hữu: người dùng (u), nhóm (g) và những người khác (o). Có ba nhóm sau:  
+- Các quyền này ảnh hưởng đến ba nhóm chủ sở hữu: người dùng (u), nhóm (g) và những thứ khác (o). Có ba nhóm sau:  
 |rwx:|rwx:|rwx|  
 |----|----|---|  
 |u:|g:|o|  
