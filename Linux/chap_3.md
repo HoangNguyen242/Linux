@@ -9,11 +9,11 @@
 - Lệnh `df -Th` hiển thị thông tin về các hệ thống tập tin được gắn kết bao gồm các thống kê kiểu và cách sử dụng về không gian hiện đang sử dụng và trống.
 
 ## Thư mục home
-- Trong UNIX, mỗi người dùng đều có thư mục home của riêng mình, thường được đặt trong /home.  
-- Thư mục /home thường được gắn kết như là một hệ thống tập tin riêng biệt trên phân vùng riêng của nó, hoặc thậm chí được chuyển đi từ xa trên một mạng thông qua NFS.
+- Trong UNIX, mỗi người dùng đều có thư mục home của riêng mình, thường được đặt trong `/home`.  
+- Thư mục `/home` thường được gắn kết như là một hệ thống tập tin riêng biệt trên phân vùng riêng của nó, hoặc thậm chí được chuyển đi từ xa trên một mạng thông qua NFS.
 
 ## Thư mục nhị phân
-- Thư mục /bin chưa các tệp nhị phân thực thi.  
+- Thư mục `/bin` chưa các tệp nhị phân thực thi.  
 - Tất cả các thư mục nhị phân nằm trong phân vùng gốc.
 
 ## Thư mục thiết bị
@@ -30,16 +30,17 @@
   - Thư mục máy chủ web: /var/www  
 
 ## Thư mục cấu hình hệ thống
-- Thư mục /etc là trang chủ cho các tệp cấu hình hệ thống. Nó không chứa các chương trình nhị phân, mặc dù có một số tập lệnh thực thi.
+- Thư mục `/etc` là trang chủ cho các tệp cấu hình hệ thống. Nó không chứa các chương trình nhị phân, mặc dù có một số tập lệnh thực thi.
 
 ## The boot directory
-- Thư mục / boot chứa một số tệp cần thiết cần thiết để khởi động hệ thống.
+- Thư mục `/boot` chứa một số tệp cần thiết cần thiết để khởi động hệ thống.
 
 ## Thư mục thư viện
-- Thư mục / lib chứa các thư viện cho các chương trình cần thiết trong thư mục / bin và / sbin.
+- Thư mục `/lib` chứa các thư viện cho các chương trình cần thiết trong thư mục `/bin` và `/sbin`.
 
 ## Thư mục bổ sung
-- |Thư mục|Chức năng|
+
+|Thư mục|Chức năng|
 |---------|-----|
 | /opt | Các gói phần mềm ứng dụng tùy chọn |
 | /sys | Hệ thống tệp ảo giả cung cấp thông tin về hệ thống và phần cứng. Có thể được sử dụng để thay đổi thông số hệ thống và gỡ lỗi. |
@@ -55,5 +56,5 @@
 | /usr/local | Dữ liệu và chương trình cụ thể cho máy cục bộ. |
 
 ## Bảng hệ thống file
-- /etc/fstab.
+- `/etc/fstab`.
 
