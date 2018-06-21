@@ -25,3 +25,4 @@
 # Sao chép đĩa
 - Lệnh `dd` sử dụng để tạo bản sao cho không gian của đĩa thô (raw disk)  
 - Lệnh `dd` có thể sao chép đĩa khởi động dưới dạng thẻ Compact Flash, Micro SD hay USB. Chèn thẻ CF được sao chép vào hệ thống và tạo ra một bản sao.  
+
