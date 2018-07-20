@@ -28,6 +28,20 @@
 |XFS|Quản lý được file có kích thước là 9 Exabyte. Cho phép các ứng dụng duy trì được tốc độ truy xuất dữ liệu trên đĩa|  
 > Journaling chỉ được sử dụng khi ghi dữ liệu lên ổ cứng và ghi thông tin vào phân vùng. Đồng thời, nó cũng khắc phục vấn đề xảy ra khi ổ cứng gặp lỗi trong quá trình này, nếu không có journal thì hệ điều hành sẽ không thể biết được file dữ liệu có được ghi đầy đủ tới ổ cứng hay chưa.
 
+# Cấu trúc vật lý
+- Tất cả các cấu trúc dữ liệu được đặt kích cỡ dựa trên kích thước một khối (block).  
+- Hệ thống tập tin được chia thành những nhóm khối (block group)  
+Tại đầu của mỗi nhóm khối có chứa các thông tin xác định vị trí, số khối và của các thông tin mô tả trạng thái hệ thống tập tin hiện hành, bao gồm các thông tin sau: 
+  - Superblock: Chứa các thông tin cơ bản nhất và các thuộc tính của hệ thống tập tin, thí dụ như tổng số i-node, tổng số khối, trạng thái hệ thống tập tin … 
+  - Group descriptors: Là một mảng cấu trúc, mỗi cấu trúc mô tả một nhóm khối, vị trí bảng i-node của nó, bản đồ khối và i-node …. 
+  - Block bitmap: đặt tại khối đầu tiên của nhóm khối. Mỗi bit đại diện cho trạng thái hiện hành của khối trong nhóm khối đó.
+  -	I-node bitmap: có chức năng tương tự như block bitmap, mỗi bit đại diện cho một i-node trong bảng i-node (i-node table). Mỗi một nhóm khối có một i- node bitmap 
+  - I-node table: Bảng i-node được sử dụng để lưu vết tất cả các tập tin; vị trí, kích thước, kiểu và các quyền truy nhâp của tập tin đều được lưu trữ trong các i-node. Mỗi i-node có chứa thông tin về một tập tin vật lý riêng rẽ trên hệ thống. I-node có thể được xem như là một khối thông tin mô tả vị trí của nó trên đĩa, kích thước và chủ nhân của nó.  
+  - Data block: Được sử dụng để lưu trữ nội dung của các tập tin, bao gồm danh sách các thư mục, các thuộc tính mở rộng, các symbolic link … 
+
+# I-node
+- I-node là một bảng có kích thước cố định được sử dụng để lưu trữ tất cả các thông tin về một tập tin, và mỗi tập tin chỉ có một i-node duy nhất.  
+
 # Liên kết cứng và liên kết mềm
 - Liên kết mềm chỉ chứa các thông tin của file vật lí mà nó trỏ đến, nó hoàn toàn không tham chiếu trực tiếp đến điểm nhập i-node của file này. Khi bạn xóa file gốc, file liên kết không còn ý nghĩa gì nữa, nhưng nếu xóa file liên kết mềm thì file gốc không ảnh hưởng.  
 - Liên kết cứng sẽ tạo ra 1 file vật lí cùng trỏ đến mục nhập i-node của file vật lí gốc. Hai fle này hoàn toàn đồng đẳng với nhau. Nếu xóa file gốc thì dữ liệu không bị mất, nó chỉ mất khi không còn liên kết nào đến i-node nữa.  
