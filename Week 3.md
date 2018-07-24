@@ -1,4 +1,4 @@
-# Cách Sử Dụng Vi
+# 1. Cách Sử Dụng Vi
 - Trình soạn thảo chuẩn của Linux là *vim*.  
 - Cú pháp khởi động: `vi [file]`  
 - *vim* có hai chế độ làm việc chính: chế độ lệnh và chế độ soạn thảo.  
@@ -94,7 +94,7 @@
 |"buff-name|Xác định tên bộ đệm|
 # File etc
 - Lưu nhiều file cấu hình hệ thống
-# Quản trị tài khoản
+# 2. Quản trị tài khoản
 ## Tài Khoản
 - Để truy nhập vào hệ thống, người dùng phải có một tài khoản người dùng. Mỗi tài khoản người dùng sẽ có một mã số nhận diện người dùng (User ID).  
 - Người dùng lập thành các nhóm, cung cấp cho họ các quyền để đọc, ghi hay thi hành tập tin nào đó. Mỗi một tài khoản nhóm có một tên riêng và có một mã số nhận diện nhóm (Group ID).  
@@ -105,8 +105,8 @@
 ## Thông tin môi trường làm việc người dùng - /etc/skel/ 
 - Thư mục `/etc/skel/` có chứa các tập tin và thư mục cấu hình màn hình của người dùng, đồng thời có chứa có chứa các tập tin khởi nạp khung là `.bash_profile`, `.bash_logout` và `.bashrc`.  
 
-# Danh sách lệnh và tập tin liên quan
-## Các lệnh quản trị người dùng và nhóm
+## Danh sách lệnh và tập tin liên quan
+### Các lệnh quản trị người dùng và nhóm
 |Lệnh|Chức năng|  
 |:---:|---|  
 |useradd|Tạo tài khoản người dùng|  
@@ -119,7 +119,7 @@
 |id|Cho biết thông tin về người dùng|  
 |su|Truy nhập với quyền người dùng khác|
 
-## Các tập tin liên quan 
+### Các tập tin liên quan 
 |Tên tập tin|Chức năng|
 |:---:|---|
 |/etc/passwd| 	Lưu thông tin tài khoản người dùng|  
@@ -128,7 +128,7 @@
 |/etc/gshadow| 	Lưu mật mã đăng nhập của nhóm|  
 |/etc/login.defs| 	Chứa các thông tin được gán tự động cho tài khoản khi được tạo|  
  
-# Quản trị hệ thống
+# 3. Quản trị hệ thống
 ## Khởi nạp hệ thống - Tiến trình, deamon
 ### Quá trình khởi động (boot)
 - Quá trình khởi động hệ điều hành Linux thực hiện qua các bước cơ bản như sau:  
@@ -177,7 +177,7 @@ Mỗi tiến trình đều có những thuộc tính như sau:
 - Thông tin lịch được đặt trong tập tin crontab. 
 > Một mục từ trong tập tin crontab có sáu trường theo định dạng sau: `minute hour day month week command`
 
-# Quản lý đĩa và hệ thống tập tin
+# 4. Quản lý đĩa và hệ thống tập tin
 ## Tự động gắn kết hệ thống tập tin - tập tin /etc/fstab 
 - Ta có thể thực hiện gắn kết một hệ thống tập tin một cách tự động mỗi khi khởi động hệ thống bằng cách khai báo các thông tin gắn kết vào trong một tập tin cấu hình `/etc/fstab`.  
 
@@ -191,7 +191,7 @@ Mỗi tiến trình đều có những thuộc tính như sau:
 - Để tìm xem không gian còn trống trên một hệ thống tập tin, ta có thể sử dụng lệnh `df`.  
 - Lệnh `du` thực hiện tính toán mức chiếm dụng đĩa của các tập tin  
 
-# Cập nhật Linux và các ứng dụng khác 
+# 5. Cập nhật Linux và các ứng dụng khác 
 ## Cài đặt và cập nhật với RPM  
 - RPM - RedHat Packet Manager - là một chương trình quản lý các gói phần mềm của Linux, là một hệ thống ‘gói’ mở, sẵn dùng cho bất kỳ người sử dụng nào.  
 - Nó cho phép người dùng lấy được mã nguồn của phần mềm mới và/hoặc đóng gói nó vào thành dạng nguồn hay tập tin nhị phân.  
@@ -205,7 +205,7 @@ Thông thường, để biên dịch và cài đặt phần mềm, ta chỉ cầ
 ```
 > Lệnh make thực hiện biên dịch, và lệnh make install thực hiện cài đặt chương trình vào.
 
-# Sao lưu và khôi phục 
+# 6. Sao lưu và khôi phục 
 ## Tiện ích lưu trữ - lệnh tar 
 - Tiện ích tar được thiết kế với mục đích để sao lưu các tập tin hoặc kết hợp nhiều tập tin vào thành một tập tin đơn. 
 
@@ -216,7 +216,7 @@ Thông thường, để biên dịch và cài đặt phần mềm, ta chỉ cầ
 |gzip| 	.gz| 	gunzip |  
 |zip| 	.zip| 	unzip |  
 
-# Chương trình nạp khởi động 
+# 7. Chương trình nạp khởi động 
 ## LILO
 - Linux có cung cấp một chương trình quản lý khởi động là *LInux LOader (LILO)* dùng để khởi động Linux cũng như cho phép người dùng lựa chọn hệ điều hành muốn sử dụng, trong trường hợp máy tính có cài nhiều hệ điều hành.
 - Cú pháp lệnh:   
@@ -239,7 +239,7 @@ Sau khi đã thực hiện các thay đổi, nhấn phím [b] để thi hành c�
 - Giao diện dòng lệnh  
 Dòng lệnh là giao diện cơ bản nhất của GRUB và nó cũng được cung cấp quyền điều khiển nhiều nhất. Giao diện dòng lệnh có thể cho phép ta thi hành bất kỳ lệnh nào của GRUB. 
 
-# Thông tin hệ thống, hệ thống tập tin /proc/ 
+# 8. Thông tin hệ thống, hệ thống tập tin /proc/ 
 ## Hệ thống tập tin /proc/ 
 - Thư mục /proc/ có chứa các tập tin tin đặc biệt đại diện cho trạng thái hiện hành của nhân hệ điều hành – cho phép các ứng dụng và người dùng ‘nhìn thấy’ nhân hệ thống: thông tin về phần cứng hệ thống và bất kỳ tiến trình đang thi hành nào. 
 - Trong thư mục này cũng có chứa một số tập tin cho phép người dùng và ứng dụng thay đổi cấu hình tới nhân hệ điều hành.  
@@ -251,7 +251,7 @@ Dòng lệnh là giao diện cơ bản nhất của GRUB và nó cũng được 
 ## Thiết lập tham số nhân hệ điều hành - lệnh sysctrl 
 - Lệnh sysctl được sử dụng để xem, thiết lập và tự động hoá các thiết lập nhân hệ điều hành trong thư mục /proc/sys/.  
 
-# Các vấn đề quản trị khác 
+# 9. Các vấn đề quản trị khác 
 ## Biến môi trường
 - Một khái niệm quan trọng trên linux đó là môi trường (environment) được định nghĩa qua các biến môi trường. Một số biến được đặt bởi hệ thống, số khác do bạn đặt, hoặc set bởi shell (các lệnh) hay một chương trình nào đó được load.  
 - Một biến môi trường có tên là một dãy chữ cái và nhận một giá trị nhất định, giá trị này có thể là số, chữ, tên file, thiết bị (device) hay một kiểu dữ liệu nào đó.  
