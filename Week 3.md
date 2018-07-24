@@ -266,3 +266,10 @@ Dòng lệnh là giao diện cơ bản nhất của GRUB và nó cũng được 
 ## Tạo tên hiệu cho lệnh - lệnh alias
 ## Hiển thị/thay đổi ngày giờ hệ thống - lệnh date 
 ## Hiển thị thông tin hệ thống - lệnh uname 
+
+# LAMP
+LAMP stack là một bộ phần mềm sửa dụng trên Linux (L) bao gồm Apache (A), Mysql (M) và PHP (P)  
+- Linux: Hệ điều hành.  
+- Apache: Đây là phần mềm webserver phổ biến hiện nay. Apache được cài đặt trên server để giúp xử lý các request với giao thức HTTP gửi tới máy chủ. Do đó, Apache còn được gọi là HTTP webserver. Lưu ý: HTTPS cũng là một giao thức mà Apache có thể sử lý.  
+- Mysql: Là phần mềm database server giúp lưu trữ và truy xuất dữ liệu một cách hiệu quả trên server.  
+- Python: Ngôn ngữ lập trình.  
