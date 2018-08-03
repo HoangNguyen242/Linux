@@ -76,7 +76,7 @@ Thêm biến vĩnh viễn |	Add the line export VAR=value to ~/.bashrc
 |!n|Tham khảo dòng lệnh thứ n|
 |!string|Tham khảo lệnh gần đây nhất bắt đầu bằng chuỗi|  
 
-# Tạo bí danh
+# Tạo bí danh  
 - Các lệnh tùy chỉnh có thể được tạo ra để thay đổi chức năng của những cái đã tồn tại bằng cách tạo bí danh.
 - Lệnh `alias` không có đối số sẽ liệt kê các bí danh hiện đang được xác định.
 
